@@ -6,5 +6,83 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: calc(100vw - (100vw - 75%));
 }
+.row{
+    display: flex;
+}
+.col{
+}
+.box{
+    border: 1px solid transparent;
+}
+img{
+    width: 100%;
+}
+.iconcine{
+    display: inline-block;
+}
+
+
+/* INIZIO HEADER  */
+.c-header {
+    max-width: calc(100vw - (100vw - 25%));
+}
+
+header .row {
+    background-color: #000000;
+    flex-direction: column;
+}
+header .col {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+header .col:nth-last-child(1) {
+   margin-top: 700px;
+   margin-bottom: 20px;
+}
+.logo {
+    width: 90%;
+}
+header .box-lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.ul-header, .li-header, span{
+    list-style-type: none;
+    font-size: 30px;
+    line-height: 70px;
+    color: grey;
+    cursor: pointer;
+}
+.link-header{
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+}
+header .box-title{
+    margin-top: 40px;
+}
+
+header h1{
+    color: white;
+    font-size: 40px;
+}
+.iconcina-big {
+    font-size: 90px;
+    vertical-align: middle;
+}
+header p {
+    color: grey;
+    font-size: 40px;
+}
+.hr-header{
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    max-width: 250px;
+    margin-left: 15px;
+}
+
+/* FINE HEADER */
