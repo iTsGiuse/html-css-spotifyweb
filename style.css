@@ -5,6 +5,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+main{
+    overflow-y: scroll;
+}
 .container {
     max-width: calc(100vw - 10%);
 }
@@ -112,3 +116,123 @@ header p {
     margin-right: 20px;
 }
 /* FINE HERO */
+
+/* INIZIO INFO */
+#info{
+    background-color: #141922;
+}
+#info .row {
+    justify-content: center;
+}
+#info .box-list{
+    margin-top: 20px;
+}
+.ul-info, .li-info{
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    color: grey;
+    cursor: pointer;
+}
+/* FINE INFO */
+
+/* INIZIO RECENTI */
+#recenti{
+    background-color: #141922;
+}
+#recenti .row:nth-last-child(1), .col:nth-last-child(1){
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+}
+#recenti .box-title{
+    margin: 30px;
+    color: white;
+    justify-content:  left;
+}
+#recenti .box-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+#recenti h3{
+    color: white;
+}
+#recenti h5{
+    color: grey;
+}
+/* FINE RECENTI */
+
+/* INIZIO FOR-USER */
+#for-user{
+    background-color: #141922;
+}
+
+#for-user .row:nth-child(1) .col:nth-child(1){
+    display: block;
+}
+
+#for-user .box-title, .box-sub-title{
+    margin: 15px;
+} 
+#for-user .row:nth-last-child(1), .col:nth-last-child(1){
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+}
+#for-user .box-title{
+    margin: 30px;
+    color: white;
+    justify-content:  left;
+}
+#for-user .box-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+#for-user h3{
+    color: white;
+}
+#for-user h5, h4{
+    color: grey;
+}
+/* FINE FOR-USER */
+
+/* INIZIO ARTISTI-POPOLARI */
+#artisti-popolari{
+    background-color: #141922;
+}
+
+#artisti-popolari .row:nth-child(1) .col:nth-child(1){
+    display: block;
+}
+
+#artisti-popolari .box-title, .box-sub-title{
+    margin: 15px;
+} 
+#artisti-popolari .row:nth-last-child(1), .col:nth-last-child(1){
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+}
+#artisti-popolari .box-title{
+    margin: 30px;
+    color: white;
+    justify-content:  left;
+}
+#artisti-popolari .box-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+#artisti-popolari h3{
+    color: white;
+}
+#artisti-popolari h5, h4{
+    color: grey;
+}
+/* FINE ARTISTI-POPOLARI */
