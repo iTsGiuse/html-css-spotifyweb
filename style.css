@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: calc(100vw - (100vw - 75%));
+    max-width: calc(100vw - 10%);
 }
 .row{
     display: flex;
@@ -15,6 +15,18 @@
 }
 .box{
     border: 1px solid transparent;
+}
+.btn{
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+.btn-black{
+    background-color: #080b12;
+    border-color: white;
+    color: white;
+    font-size: 20px;
 }
 img{
     width: 100%;
@@ -26,11 +38,10 @@ img{
 
 /* INIZIO HEADER  */
 .c-header {
-    max-width: calc(100vw - (100vw - 25%));
-}
-
-header .row {
+    max-width: calc(100vw - 90%);
     background-color: #000000;
+}
+header .row {
     flex-direction: column;
 }
 header .col {
@@ -40,6 +51,7 @@ header .col {
 header .col:nth-last-child(1) {
    margin-top: 700px;
    margin-bottom: 20px;
+   margin-left: 15px;
 }
 .logo {
     width: 90%;
@@ -86,3 +98,17 @@ header p {
 }
 
 /* FINE HEADER */
+
+/* INIZIO HERO */
+#hero {
+    background-color: #080b12;
+}
+#hero .row{
+    justify-content: flex-end;
+}
+#hero .box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+/* FINE HERO */
