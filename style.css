@@ -51,8 +51,7 @@ img{
     
 }
 header {
-
-    flex-shrink: 0;
+flex-shrink: 0;
 }
 header .row {
     flex-direction: column;

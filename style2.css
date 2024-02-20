@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.separatore{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.container {
+    border: 1px solid transparent;
+}
+ul, li{
+    cursor: pointer;
+    list-style-type: none;
+}
+.link{
+    cursor: pointer;
+    text-decoration: none;
+}
+/* INIZIO HEADER */
+header{
+    max-width: 250px;
+    background-color: #000000;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.logo{
+    width: 70%;
+}
+header .row:nth-child(2){
+    margin-top: 20px;
+}
+.ul-header, .li-header{
+    line-height: 30px;
+    color: grey;
+}
+.link-header{
+   color: grey;
+   font-size: 20px;
+}
+header .row:nth-child(3){
+    margin-top: 20px;
+}
+.iconcina-big {
+    font-size: 30px;
+    vertical-align: middle;
+}
+header .box-title-header{
+    color: white;
+    margin-bottom: 10px;
+}
+header .row:nth-last-child(1){
+    margin-top: 450px;
+}
+.hr-header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+header .install{
+    font-size: 16px;
+    color: grey;
+}
+header .user{
+    color: white;
+}
+
+/* FINE HEADER */
+
+main{
+    max-width: calc(100vw - 250px);
+    background-color: #141922;
+    display: flex;
+    overflow-y: auto;
+}
+
+footer{
+    height: 100px;
+    background-color: #282828;
+}
+
