@@ -112,7 +112,7 @@ main{
 
 /* INIZIO NAV */
 #nav{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .ul-nav, .li-nav{
     display: flex;
@@ -124,7 +124,7 @@ main{
 
 /* INIZIO RECENTI */
 #recenti{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #recenti h2{
     color: white;
@@ -150,7 +150,7 @@ main{
 
 /* INIZIO FOR-USER */
 #for-user{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #for-user h2{
     color: white;
@@ -169,10 +169,37 @@ main{
     margin-top: 5px;
     text-align: center;
 }
-
 /* FINE FOR-USER */
+
+/* INIZIO FOR-USER */
+#popular {
+    margin-top: 30px;
+}
+#popular  h2{
+    color: white;
+    font-weight: 400;
+}
+#popular  .row:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 30px;
+}
+#popular  .box-sub-title{
+    margin-top: 5px;
+}
+#popular .box-text{
+    margin-top: 5px;
+    text-align: center;
+}
+.circle{
+    border-radius: 50%;
+}
+/* FINE FOR-USER */
+
 footer{
     height: 100px;
     background-color: #282828;
 }
+
 
