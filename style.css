@@ -5,288 +5,316 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.disposizione{
-    height: calc(100vh - 150px);
+/* INIZIO ELEMENTI */
+.separatore{
+    height: calc(100vh - 100px);
     display: flex;
-}
-
-main{
-   overflow-y: auto;
 }
 .container {
-    max-width: calc(100vw - 300px);
-}
-.row{
-    display: flex;
-}
-.col{
-}
-.box{
     border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.c-icon{
+    display: flex;
+    gap: 10px;
+    color: grey;
+    cursor: pointer;
 }
 .btn{
     border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 15px;
     cursor: pointer;
 }
-.btn-black{
-    background-color: #080b12;
-    border-color: white;
-    color: white;
-    font-size: 20px;
-}
-img{
-    width: 100%;
-}
-.iconcine{
-    display: inline-block;
-}
-
-
-/* INIZIO HEADER  */
-.c-header {
-    max-width: 300px;
-    background-color: #000000;
-    
-}
-header {
-flex-shrink: 0;
-}
-header .row {
-    flex-direction: column;
-}
-header .col {
-    margin-left: 15px;
-    margin-top: 20px;
-}
-header .col:nth-last-child(1) {
-   margin-top: 50px;
-   margin-bottom: 20px;
-   margin-left: 15px;
-   display: block;
-}
-.logo {
-    width: 90%;
-}
-header .box-lista{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.ul-header, .li-header, span{
+ul, li{
+    cursor: pointer;
     list-style-type: none;
-    font-size: 30px;
-    line-height: 70px;
-    color: grey;
-    cursor: pointer;
 }
-.link-header{
+.link{
     cursor: pointer;
     text-decoration: none;
+}
+.album{
+    width: 100%;
+    cursor: pointer;
+}
+ /* FINE ELEMENTI */
+
+/* INIZIO HEADER */
+header{
+    max-width: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #000000;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.logo{
+    width: 100%;
+}
+header .row:nth-child(2){
+    margin-top: 20px;
+}
+.ul-header, .li-header{
+    line-height: 30px;
     color: grey;
 }
-header .box-title{
-    margin-top: 40px;
+.link-header{
+   color: grey;
+   font-size: 20px;
 }
-
-header h1{
-    color: white;
-    font-size: 40px;
+header .row:nth-child(3){
+    margin-top: 20px;
 }
 .iconcina-big {
-    font-size: 90px;
+    font-size: 30px;
     vertical-align: middle;
 }
-header p {
-    color: grey;
-    font-size: 40px;
+header .box-title-header{
+    color: white;
+    margin-bottom: 10px;
 }
-.hr-header{
-    color: grey;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    max-width: 250px;
-    margin-left: 15px;
+header .row:nth-last-child(1){
+    margin-top: 430px;
 }
+.hr-header {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-color: grey;
+}
+header .install{
+    font-size: 16px;
+    color: grey;
+}
+header .user{
+    color: white;
+} 
 
-/* FINE HEADER */
+/* FINE HEADER */ 
+
+main{
+    width: calc(100vw - 250px);
+    flex-shrink: 1;
+    background-color: #141922;
+    overflow-y: auto;
+}
 
 /* INIZIO HERO */
-#hero {
+#hero{
     background-color: #080b12;
-}
-#hero .row{
+    display: flex;
     justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
-#hero .box{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 20px;
+.btn-black{
+    border-radius: 20px;
+    border-color: white;
+    background-color: #080b12;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
 }
 /* FINE HERO */
 
-/* INIZIO INFO */
-#info{
-    background-color: #141922;
+/* INIZIO NAV */
+#nav{
+    margin-top: 30px;
 }
-#info .row {
-    justify-content: center;
-}
-#info .box-list{
-    margin-top: 20px;
-}
-.ul-info, .li-info{
-    list-style-type: none;
-    font-size: 30px;
+.ul-nav, .li-nav{
     display: flex;
-    gap: 20px;
+    justify-content: center;
     color: grey;
-    cursor: pointer;
+    font-weight: 500;
+    gap: 20px;
+
 }
-/* FINE INFO */
+/* FINE NAV */
 
 /* INIZIO RECENTI */
 #recenti{
-    background-color: #141922;
+    margin-top: 30px;
 }
-#recenti .row:nth-last-child(1), .col:nth-last-child(1){
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    cursor: pointer;
-}
-#recenti .box-title{
-    margin: 30px;
+#recenti h2{
     color: white;
-    justify-content:  left;
+    font-weight: 400;
+}
+#recenti .row:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px;
 }
 #recenti .box-text{
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
+    margin-top: 5px;
+    text-align: center;
 }
-#recenti h3{
+.title{
     color: white;
 }
-#recenti h5{
+.sub-title{
     color: grey;
 }
 /* FINE RECENTI */
 
 /* INIZIO FOR-USER */
 #for-user{
-    background-color: #141922;
+    margin-top: 30px;
 }
-
-#for-user .row:nth-child(1) .col:nth-child(1){
-    display: block;
-}
-
-#for-user .box-title, .box-sub-title{
-    margin: 15px;
-} 
-#for-user .row:nth-last-child(1), .col:nth-last-child(1){
-    margin-top: 15px;
-    gap: 50px;
-    cursor: pointer;
-}
-#for-user .box-title{
-    margin: 30px;
+#for-user h2{
     color: white;
-    justify-content:  left;
+    font-weight: 400;
+}
+#for-user .row:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 30px;
+}
+#for-user .box-sub-title{
+    margin-top: 5px;
 }
 #for-user .box-text{
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-}
-#for-user h3{
-    color: white;
-}
-#for-user h5, h4{
-    color: grey;
+    margin-top: 5px;
+    text-align: center;
 }
 /* FINE FOR-USER */
 
-/* INIZIO ARTISTI-POPOLARI */
-#artisti-popolari{
-    background-color: #141922;
+/* INIZIO FOR-USER */
+#popular {
+    margin-top: 30px;
 }
-
-#artisti-popolari .row:nth-child(1) .col:nth-child(1){
-    display: block;
-}
-
-#artisti-popolari .box-title, .box-sub-title{
-    margin-top: 15px;
-    margin-bottom: 15px;
-} 
-#artisti-popolari .row:nth-last-child(1), .col:nth-last-child(1){
-    margin-top: 20px;
-    gap: 50px;
-    cursor: pointer;
-    padding-bottom: 20px;
-}
-#artisti-popolari .box-title{
-    margin: 30px;
+#popular  h2{
     color: white;
-    justify-content:  left;
+    font-weight: 400;
 }
-#artisti-popolari .box-text{
+#popular  .row:nth-child(2){
     display: flex;
-    justify-content: center;
-    margin-top: 12px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 30px;
 }
-#artisti-popolari h3{
-    color: white;
+#popular  .box-sub-title{
+    margin-top: 5px;
 }
-#artisti-popolari h5, h4{
-    color: grey;
+#popular .box-text{
+    margin-top: 5px;
+    text-align: center;
 }
-/* FINE ARTISTI-POPOLARI */
+.circle{
+    border-radius: 50%;
+}
+/* FINE FOR-USER */
 
-/* INZIO FOOTER  */
+/* INIZIO FOOTER */
 footer{
-    height: 150px;
-}
-footer .container{
+    height: 100px;
     background-color: #282828;
-    max-width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-footer .row{
+footer .row {
+    display: flex;
     justify-content: space-between;
 }
-.box-container{
+footer .col:nth-child(1), .box-container-footer{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+}
+
+.box-image-play{
+    border: 1px solid transparent;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
-}
-footer .box-title-footer{
-    color: white;
-}
-footer .box-sub-title-footer{
-    color: grey;
 }
 .play{
-    width: 50%;
+    width: 100%;
 }
-footer .box-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: -130px;
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-footer .box-icona{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 30px;
-    font-size: 20px;
-    color: grey;
+footer .col:nth-child(2) {
+    display: block;
+    
 }
 
+footer .box-top, .box-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
 
+.hr-song{
+    border: 2px solid grey;
+    width: 500px;
+    cursor: pointer;
+}
+
+footer .col:nth-last-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.hr-volume{
+    border: 2px solid grey;
+    width: 150px;
+    cursor: pointer;
+}
 /* FINE FOOTER */
+
+
+/* INIZIO HOOVER */
+.ul-header:hover .li-header:hover {
+    border: 1px solid transparent;
+    border-left-color: green ;
+    padding-left: 5px;
+    color: white;
+}
+.ul-nav:hover .li-nav:hover {
+    color: white;
+}
+.link:hover{
+    color: white;
+}
+.btn:hover{
+    color: white;
+    padding: 15px;
+}
+.album:hover{
+    width: 110%;
+}
+/* FINE HOOVER */
+
+
+
+/* INIZIO MEDIAQUEARY */
+@media screen and (max-width: 1100px) {
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 70px;
+    }
+
+    .playlist-title, .playlist {
+        display: none;
+    }
+}
+/* FINE MEDIAQUEARY */
+
+
+

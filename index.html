@@ -10,28 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="disposizione">
+    <div class="separatore">
         <header>
-        <div class="c-header">
-            <div class="row">
+            <div class="container ">
                 <div class="col">
-                    <div class="box-image">
-                        <img class="logo" src="./img/logo.svg" alt="logo">
+                    <div class="row">
+                        <img class="logo" src="./img/logo.svg" alt="">
                     </div>
-                    <div class="box-lista">
+                    <div class="row">
                         <ul class="ul-header">
-                            <li class="li-header"><a class="link-header" href="http://"><i class="iconcine fa-solid fa-house"></i>   Home</li></a>
-                            <li class="li-header"><a class="link-header" href="http://"><i class="fa-solid fa-magnifying-glass"></i>   Cerca</li></a>
-                            <li class="li-header"><a class="link-header" href="http://"><i class="fa-solid fa-grip-lines-vertical"></i>   La tua libreria</li></a>
+                            <li class="li-header"><a class="link link-header" href="http://"><i class="iconcine fa-solid fa-house"></i> Home</li></a>
+                            <li class="li-header"><a class="link link-header" href="http://"><i class="fa-solid fa-magnifying-glass"></i> Cerca</li></a>
+                            <li class="li-header"><a class="link link-header" href="http://"><i class="fa-solid fa-grip-lines-vertical"></i> La tua libreria</li></a>
                         </ul>
                     </div>
-                    <div class="box">
-                        <div class="box-title">
-                            <h1>Playlist</h1>
+                    <div class="row">
+                        <div class="box-title-header">
+                            <h3>PLAYLIST</h3>
                         </div>
-                        <div class="box-lista">
+                        <div class="box-ul">
                             <ul class="ul-header">
                                 <li class="li-header "><i class="iconcina-big fa-solid fa-square-plus"></i> Crea Playlist </li>
                                 <li class="li-header"> Nome Playlist</li>
@@ -43,226 +43,251 @@
                                 <li class="li-header"> Nome Playlist</li>
                             </ul>
                         </div>
-                    </div>  
-                </div>
-                <div class="col">
-                    <div class="box">
-                        <span><a class="link-header" href="http://"><i class="iconcine fa-solid fa-circle-arrow-down"></i>  Installa app</span></a>
                     </div>
-                    <hr class="hr-header">
-                    <div class="box">
-                        <p></s><a class="link-header" href="http://"><i class="fa-solid fa-circle-user"> </i> Jonh Doe</p></a>
+                    <div class="row">
+                        <div class="box">
+                         <a class="install link link-header" href="http://"><i class="fa-solid fa-circle-arrow-down"></i>  Installa app</a>
+                        </div>
+                        <hr class="hr-header">
+                        <div class="box-user">
+                            <a class="user link link-header" href="http://"><i class="fa-solid fa-circle-user"></i> Jonh Doe</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </header>
+          
+        </header> 
         <main>
-            <section id="hero" class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="box">
-                        <button class="btn btn-black">EFFETTUA L'UPGRADE</button>
+            <section id="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-black">EFFETTUA L'UPGRADE</button>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
-            <section id="info" class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="box-list">
-                        <ul class="ul-info">
-                            <li class="li-info">IN EVIDENZA</li>
-                            <li class="li-info">PODCAST</li>
-                            <li class="li-info"> CLASSIFICHE</li>
-                            <li class="li-info">GENERI E MOOD</li>
-                            <li class="li-info">NUOVE USCITE</li>
-                            <li class="li-info">SCOPRI</li>
+            <section id="nav">
+                <div class="container">
+                    <div class="row">
+                        <ul class="ul-nav">
+                            <li class="li-nav">IN EVIDENZA</li>
+                            <li class="li-nav">PODCAST</li>
+                            <li class="li-nav"> CLASSIFICHE</li>
+                            <li class="li-nav">GENERI E MOOD</li>
+                            <li class="li-nav">NUOVE USCITE</li>
+                            <li class="li-nav">SCOPRI</li>
                         </ul>
                     </div>
                 </div>
-            </div>
             </section>
-            <section id="recenti" class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="box-title">
-                        <h1>Recently played</h1>
+            <section id="recenti">
+                <div class="container">
+                    <div class="row">
+                        <h2>Recently Played</h2>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                    <div class="row">
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Heavy Metal</h3>
+                            </div>   
+                            <div class="box-text">  
+                                <h5 class="sub-title">Subtitle</h5>
+                            </div>
                         </div>
-                        <div class="box-text">    
-                            <h3>Heavy Metal</h3>
-                        </div>   
-                        <div class="box-text">  
-                            <h5>Subtitle</h5>
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/stranger.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Stranger Things, Vol. 1 <div></div>(a Netflix Original Series <div></div> SoundTrack)</h3>
+                            </div>   
+                            <div class="box-text">  
+                                <h5 class="sub-title">Kyle Dixon & Micheal Stein</h5>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/stranger.jpeg" alt="">
+        
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/aquietplace.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">A quiet place</h3>
+                            </div>   
+                            <div class="box-text">  
+                                <h5 class="sub-title">Subtitle</h5>
+                            </div>
                         </div>
-                        <div class="box-text">    
-                            <h3>Stranger Things, Vol. 1 <div></div>(a Netflix Original Series <div></div> SoundTrack)</h3>
-                        </div>   
-                        <div class="box-text">  
-                            <h5>Subtitle</h5>
+        
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/split.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Split</h3>
+                            </div>   
+                            <div class="box-text">  
+                                <h5 class="sub-title">Subtitle</h5>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/aquietplace.jpeg" alt="">
+        
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/cure.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">A cure for wellness</h3>
+                            </div>   
+                            <div class="box-text">  
+                                <h5 class="sub-title">Subtitle</h5>
+                            </div>
                         </div>
-                        <div class="box-text">    
-                            <h3>A quiet place</h3>
-                        </div>   
-                        <div class="box-text">  
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/split.jpeg" alt="">
-                        </div>
-                        <div class="box-text">    
-                            <h3>Split</h3>
-                        </div>   
-                        <div class="box-text">  
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/cure.jpeg" alt="">
-                        </div>
-                        <div class="box-text">    
-                            <h3>A cure for wellness</h3>
-                        </div>   
-                        <div class="box-text">  
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/sinister.jpeg" alt="">
-                        </div>
-                        <div class="box-text">    
-                            <h3>Sinister</h3>
-                        </div>   
-                        <div class="box-text">  
-                            <h5>Subtitle</h5>
+        
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/sinister.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Sinister</h3>
+                            </div>   
+                            <div class="box-text">  
+                                <h5 class="sub-title">Subtitle</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </section>
-            <section id="for-user" class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="box-title">
-                        <h1>Creato per John Doe</h1>
-                    </div>
-                    <div class="box-sub-title">
-                        <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/radar.jpeg" alt="">
+            <section id="for-user">
+                <div class="container">
+                    <div class="row">
+                        <div class="box-title">
+                            <h2 class="title">Creato per John Doe</h2>
                         </div>
-                        <div class="box-text">    
-                            <h3>Release Radar</h3>
+                        <div class="box-sub-title">
+                            <h4 class="sub-title">Più ascolti, più accurati saranno i suggerimenti.</h4>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/mixdaily.jpeg" alt="">
+                    <div class="row">
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/radar.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Heavy Metal</h3>
+                            </div>   
                         </div>
-                        <div class="box-text">    
-                            <h3>Daily Mix 1</h3>
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album" src="./img/mixdaily.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Daily Mix 1</h3>
+                            </div>   
                         </div>
-                    </div>
-                </div>
-            </div>
             </section>
-            <section id="artisti-popolari" class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="box-title">
-                        <h1>Artisti più popolari</h1>
-                    </div>
-                    <div class="box-sub-title">
-                        <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/youg.jpeg" alt="">
+            <section id="popular">
+                <div class="container">
+                    <div class="row">
+                        <div class="box-title">
+                            <h2 class="title">Creato per John Doe</h2>
                         </div>
-                        <div class="box-text">    
-                            <h3>Lana Del Rey</h3>
+                        <div class="box-sub-title">
+                            <h4 class="sub-title">Più ascolti, più accurati saranno i suggerimenti.</h4>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="./img/einaudi.jpeg" alt="">
+                    <div class="row">
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album circle" src="./img/youg.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Heavy Metal</h3>
+                            </div>   
                         </div>
-                        <div class="box-text">    
-                            <h3>Ludovico Einaudi</h3>
+                        <div class="box-container">
+                            <div class="box-image">
+                                <img class="album circle" src="./img/einaudi.jpeg" alt="">
+                            </div>
+                            <div class="box-text">    
+                                <h3 class="title">Daily Mix 1</h3>
+                            </div>   
                         </div>
-                    </div>
-                </div>
-            </div>
             </section>
+            
         </main>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="box-container">
-                        <div class="box-image">
-                            <img class="play" src="./img/sinister.jpeg" alt="">
-                        </div>
-                        <div class="box-footer">
-                            <div class="box-title-footer">
-                                <h4>Sinister</h4>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="box-container-footer">
+                            <div class="box-image-play">
+                                <img class="play" src="./img/sinister.jpeg" alt="">
                             </div>
-                            <div class="box-sub-title-footer">
-                                <h4>Nome Brano</h4>
+                            <div class="box-c">
+                                <div class="box-text">    
+                                    <h4 class="title">Sinister</h4>
+                                </div>   
+                                <div class="box-text">  
+                                    <h5 class="sub-title">Name Brano</h5>
+                                </div>
                             </div>
-                        </div>
-                        <div class="box-icona">
-                            <i class="iconcina fa-solid fa-heart"></i>
-                        </div>
-                        <div class="box-icona">
-                            <i class="iconcina fa-solid fa-folder"></i>
+                            <div class="c-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-folder"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="box-top">
+                            <div class="box-icon"> 
+                                <i class="icon fa-solid fa-shuffle"></i>
+                            </div>
+                            <div class="box-icon"> 
+                                <i class="icon fa-solid fa-backward"></i>
+                            </div>
+                            <div class="box-icon"> 
+                                <i class="icon fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="box-icon"> 
+                                <i class="icon fa-solid fa-forward-step"></i>
+                            </div>
+                            <div class="box-icon"> 
+                                <i class="icon fa-solid fa-arrow-rotate-right"></i>
+                            </div>
+                        </div>
+                        <div class="box-bottom">
+                            <div class="box-text">
+                                <h5>0.40</h5>
+                            </div>
+                            <hr class="hr-song">
+                            <div class="box-text">
+                                <h5>3.40</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box"> 
+                            <i class="icon fa-solid fa-chart-bar"></i>
+                        </div>
+                        <div class="box"> 
+                            <i class="icon fa-solid fa-display"></i>
+                        </div>
+                        <div class="box"> 
+                            <i class="icon fa-solid fa-volume-high"></i>
+                        </div>
+                        <hr class="hr-volume hr-bianco">
+                      
+                    </div>
                 </div>
-                <div class="col">
-                    <div></div>
-                </div>
-                <div class="col"></div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 </html>
