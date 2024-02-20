@@ -12,6 +12,8 @@
 }
 .container {
     border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .btn{
     border: 1px solid transparent;
@@ -24,6 +26,9 @@ ul, li{
 .link{
     cursor: pointer;
     text-decoration: none;
+}
+.album{
+    width: 100%;
 }
 /* FINE ELEMENTI */
 
@@ -117,18 +122,55 @@ main{
 }
 /* FINE NAV */
 
-/* INIZIO NAV */
-#nav{
+/* INIZIO RECENTI */
+#recenti{
     margin-top: 20px;
 }
-.ul-nav, .li-nav{
-    display: flex;
-    justify-content: center;
-    color: grey;
-    gap: 20px;
+#recenti h2{
+    color: white;
+    font-weight: 400;
 }
-/* FINE NAV */
+#recenti .row:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 30px;
+}
+#recenti .box-text{
+    margin-top: 5px;
+    text-align: center;
+}
+.title{
+    color: white;
+}
+.sub-title{
+    color: grey;
+}
+/* FINE RECENTI */
 
+/* INIZIO FOR-USER */
+#for-user{
+    margin-top: 20px;
+}
+#for-user h2{
+    color: white;
+    font-weight: 400;
+}
+#for-user .row:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 30px;
+}
+#for-user .box-sub-title{
+    margin-top: 5px;
+}
+#for-user .box-text{
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* FINE FOR-USER */
 footer{
     height: 100px;
     background-color: #282828;
