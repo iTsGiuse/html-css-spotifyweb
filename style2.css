@@ -5,13 +5,21 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* INIZIO ELEMENTI */
 .separatore{
     height: calc(100vh - 100px);
     display: flex;
 }
-
 .container {
     border: 1px solid transparent;
+}
+.c-main{
+    max-width: calc(100vw - 250px);
+    height: 30px;
+}
+.btn{
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 ul, li{
     cursor: pointer;
@@ -21,9 +29,13 @@ ul, li{
     cursor: pointer;
     text-decoration: none;
 }
+/* FINE ELEMENTI */
+
 /* INIZIO HEADER */
 header{
     max-width: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
     background-color: #000000;
     padding-top: 15px;
     padding-left: 15px;
@@ -72,11 +84,31 @@ header .user{
 /* FINE HEADER */
 
 main{
-    max-width: calc(100vw - 250px);
+    width: calc(100vw - 250px);
+    flex-shrink: 1;
     background-color: #141922;
-    display: flex;
     overflow-y: auto;
 }
+
+/* INIZIO HERO */
+#hero{
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.btn-black{
+    border-radius: 20px;
+    border-color: white;
+    background-color: #080b12;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+/* FINE HERO */
+
 
 footer{
     height: 100px;
