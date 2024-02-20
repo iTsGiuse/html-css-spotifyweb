@@ -13,10 +13,6 @@
 .container {
     border: 1px solid transparent;
 }
-.c-main{
-    max-width: calc(100vw - 250px);
-    height: 30px;
-}
 .btn{
     border: 1px solid transparent;
     cursor: pointer;
@@ -109,6 +105,29 @@ main{
 }
 /* FINE HERO */
 
+/* INIZIO NAV */
+#nav{
+    margin-top: 20px;
+}
+.ul-nav, .li-nav{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    gap: 20px;
+}
+/* FINE NAV */
+
+/* INIZIO NAV */
+#nav{
+    margin-top: 20px;
+}
+.ul-nav, .li-nav{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    gap: 20px;
+}
+/* FINE NAV */
 
 footer{
     height: 100px;
