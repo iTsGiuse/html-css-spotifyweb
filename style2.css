@@ -15,6 +15,12 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+.c-icon{
+    display: flex;
+    gap: 10px;
+    color: grey;
+    cursor: pointer;
+}
 .btn{
     border: 1px solid transparent;
     cursor: pointer;
@@ -29,6 +35,7 @@ ul, li{
 }
 .album{
     width: 100%;
+    cursor: pointer;
 }
 /* FINE ELEMENTI */
 
@@ -71,8 +78,9 @@ header .row:nth-last-child(1){
     margin-top: 450px;
 }
 .hr-header {
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 20px;
+    border-color: grey;
 }
 header .install{
     font-size: 16px;
@@ -197,9 +205,70 @@ main{
 }
 /* FINE FOR-USER */
 
+/* INIZIO FOOTER */
 footer{
     height: 100px;
     background-color: #282828;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+footer .col:nth-child(1), .box-container-footer{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+}
+
+.box-image-play{
+    border: 1px solid transparent;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.play{
+    width: 100%;
+}
+footer .col:nth-child(2) {
+    display: block;
+    
+}
+
+footer .box-top, .box-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.hr-song{
+    border: 2px solid grey;
+    width: 500px;
+    cursor: pointer;
+}
+
+footer .col:nth-last-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.hr-volume{
+    border: 2px solid grey;
+    width: 150px;
+    cursor: pointer;
+}
+
+/* INIZIO FOOTER */
 
 
