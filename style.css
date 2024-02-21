@@ -37,6 +37,8 @@ ul, li{
     width: 100%;
     cursor: pointer;
 }
+
+
  /* FINE ELEMENTI */
 
 /* INIZIO HEADER */
@@ -335,11 +337,10 @@ footer .col:nth-last-child(1) {
     padding: 15px;
 }
 .album:hover{
-    width: 110%;
-
+    width: 105%;
 } 
 i:hover{
-    font-size: 22px;
+    font-size: 25px;
     color: white;
 }
 .image-nascosta{
