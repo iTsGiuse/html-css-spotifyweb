@@ -336,11 +336,26 @@ i:hover{
    main, heaeder{
     width: 100%;
    }
+   .ul-nav, .li-nav{
+    flex-wrap: wrap;
+    }
+    #recenti .row:nth-child(2){
+        flex-wrap: wrap;
+     }
 }
 @media screen and (max-width: 700px) {
     main, heaeder {
         width: 100%;
        }
+       .ul-nav, .li-nav{
+        flex-wrap: wrap;
+        }
+        #recenti .row:nth-child(2){
+            flex-wrap: wrap;
+         }
+         .album{
+             width: 50%;
+         }
 
 }
 
@@ -348,6 +363,9 @@ i:hover{
     main, heaeder  {
         width: 100%;
        }
+       .ul-nav, .li-nav{
+        flex-wrap: wrap;
+        }
 }
 
 /* FINE MEDIAQUEARY */
