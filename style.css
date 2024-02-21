@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-
 /* INIZIO ELEMENTI */
 .separatore{
     height: calc(100vh - 100px);
@@ -33,11 +32,10 @@ ul, li{
     cursor: pointer;
     text-decoration: none;
 }
-.album{
+.album, .logo{
     width: 100%;
     cursor: pointer;
 }
-
 
  /* FINE ELEMENTI */
 
@@ -65,22 +63,30 @@ header .box-container{
     width: 30px;
     height: 30px;
     margin-right: 7px;
+    position: relative;;
 }
 .ul-menu, .li-menu, .ul-header, .li-header{
     line-height: 35px;
     color: grey; 
 }
+.ul-header{
+    overflow-y: auto;
+}
+
 .link-header{
    color: grey;
    font-size: 20px;
 }
 .bordo-verticale{
-    border-left:2px solid #adff2f;
-    padding-left: 5px;
+    width: 5px;
+    height: 35px;
+    background-color: #adff2f;
+    position: absolute;
+    left: -15px;
 }
+
 header .row:nth-child(3){
     margin-top: 20px;
-    overflow: auto;
 }
 .iconcina-big {
     font-size: 30px;
@@ -125,8 +131,8 @@ main{
     justify-content: flex-end;
     padding-top: 20px;
     padding-bottom: 20px;
-   
 }
+
 .btn-black{
     border-radius: 20px;
     border-color: white;
@@ -147,11 +153,14 @@ main{
     color: grey;
     font-weight: 500;
     gap: 20px;
+    position: relative;
 }
-
 .bordo-orizzonatale{
-    border-bottom: 2px solid #adff2f;
-    padding-bottom: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: #adff2f;;
+    position: absolute;
+    bottom: -7px;
 }
 
 /* FINE NAV */
@@ -174,7 +183,7 @@ main{
 #recenti .box-container{
     width: calc(100% / 6);
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 #recenti .box-text{
     margin-top: 5px;
@@ -204,7 +213,7 @@ main{
 #for-user .box-container{
     width: calc(100% / 6);
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 #for-user .box-sub-title{
     margin-top: 5px;
@@ -231,7 +240,7 @@ main{
 #popular .box-container{
     width: calc(100% / 6);
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 #popular  .box-sub-title{
@@ -293,7 +302,25 @@ footer .box-top, .box-bottom {
     background: grey;
     cursor: pointer;
 }
-
+.bar-riempimento{
+    width: 15%;
+    height: 100%;
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+.pallino{
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
 footer .col:nth-last-child(1) {
     display: flex;
     width: 30%;
@@ -310,51 +337,70 @@ footer .col:nth-last-child(1) {
     background: grey;
     cursor: pointer;
 }
-.bar-riempimento{
-    width: 15%;
-    height: 100%;
-    background: white;
-    cursor: pointer;
-}
+
 /* FINE FOOTER */
 
 
 /* INIZIO HOOVER */
+.ul-menu:hover .li-menu:hover .link-header {
+    border: 1px solid transparent;
+    font-size: 22px;
+    padding-left: 5px;
+    color: white;
+}
 .ul-header:hover .li-header:hover {
     border: 1px solid transparent;
-    border-left-color: green ;
+    font-size: 20px;
     padding-left: 5px;
     color: white;
 }
 .ul-nav:hover .li-nav:hover {
     color: white;
+    font-size: 20px;
 }
 .link:hover{
     color: white;
 }
-.btn:hover{
-    color: white;
+.btn-black:hover{
+    font-size: 20px;
     padding: 15px;
 }
-.album:hover{
-    width: 105%;
-} 
-i:hover{
+ .icon:hover{
     font-size: 25px;
     color: white;
-}
-.image-nascosta{
+} 
+/* INIZIO IMMAGINI HOOVER */
+.logo-small{
     display: none;
 }
-.image:hover{
-    display: block;
+.box-image {
     position: relative;
-    font-size: 300%;
+    opacity: 1;
+}
+.box-image-hover{
+    display: none;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    color:  white;
+    font-size: 125px;
+    opacity: 1;
+    transition: 0.4s;
 }
+
+.box-image:hover .box-image-hover{
+    display: block;
+}
+
+.box-image:hover {
+    opacity: 0.4;
+}
+
+.bar-riempimento:hover .pallino{
+    display: block;
+}
+/* FINE IMMAGINI HOOVER */
 /* FINE HOOVER */
 
 
@@ -366,6 +412,12 @@ i:hover{
    }
    .ul-nav, .li-nav{
     flex-wrap: wrap;
+    }
+    header .row:nth-last-child(1) .box-container:nth-child(1){
+        margin-top: 15px;
+    }
+    .hr-header {
+        margin-bottom: 10px;
     }
      #recenti .box-container{
         width: calc(100% / 4);
@@ -380,7 +432,13 @@ i:hover{
 @media screen and (max-width: 700px) {
     main, heaeder {
         width: 100%;
-       }
+    }
+    header .row:nth-last-child(1) .box-container:nth-child(1){
+        margin-top: 15px;
+    }
+    .hr-header {
+        margin-bottom: 10px;
+    }
        .ul-nav, .li-nav{
         flex-wrap: wrap;
         }
@@ -406,20 +464,30 @@ i:hover{
             gap: 10px;
         }
 }
-
 @media screen and (max-width: 600px) {
         main {
         width: 100%;
        }
        header{
-        width: 20%;
+        width: auto;
+        align-items: center;
        }
+       .logo{
+        display: none;
+       }
+       .logo-small{
+        display: block;
+        width: 40px;
+       }
+       .image-menu{
+        padding-bottom: 10px;
+        }
        .link, .link-header, .ul-header, .li-header, .box-title-header, .hr-header{
         display: none;
        }
        .box-image-header{
         display: block;
-        margin-bottom: 10px;
+        margin-top: 10px;
        }
        .download{
         margin-bottom: 20px;
@@ -427,6 +495,7 @@ i:hover{
         width: 30px;
         margin-left: -3px;
         }
+      
        .ul-nav, .li-nav{
         flex-wrap: wrap;
         }
@@ -438,9 +507,6 @@ i:hover{
         }
         #popular .box-container{
             width: calc(100% / 2);
-        }
-        footer{
-          
         }
         footer .col:nth-child(1), .box-container-footer{
             gap: 5px;
@@ -458,6 +524,8 @@ i:hover{
         footer .col:nth-last-child(1) {
             gap: 10px;
         }
+      
 }
 
 /* FINE MEDIAQUEARY */
+
