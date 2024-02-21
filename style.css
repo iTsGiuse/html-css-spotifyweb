@@ -41,18 +41,16 @@ ul, li{
 
 /* INIZIO HEADER */
 header{
-    max-width: 250px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     overflow: hidden;
     background-color: #000000;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 10px;
+    padding: 15px;
 }
 .logo{
-    width: 100%;
+    
 }
 header .row:nth-child(2){
     margin-top: 20px;
@@ -78,7 +76,7 @@ header .box-title-header{
     margin-bottom: 10px;
 }
 header .row:nth-last-child(1){
-    margin-top: 160px;
+    margin-top: auto;
 }
 .hr-header {
     margin-top: 12px;
@@ -229,6 +227,7 @@ footer .row {
 }
 footer .col:nth-child(1), .box-container-footer{
    display: flex;
+   width: 30%;
    justify-content: flex-start;
    align-items: center;
    gap: 10px;
@@ -241,11 +240,10 @@ footer .col:nth-child(1), .box-container-footer{
     display: flex;
     justify-content: center;
 }
-.play{
-    width: 100%;
-}
+
 footer .col:nth-child(2) {
     display: block;
+    width: 40%;
 }
 
 footer .box-top, .box-bottom {
@@ -259,7 +257,7 @@ footer .box-top, .box-bottom {
 }
 
 .bar-song{
-    width: 500px;
+    width: 100%;
     height: 5px;
     background: grey;
     cursor: pointer;
@@ -267,16 +265,16 @@ footer .box-top, .box-bottom {
 
 footer .col:nth-last-child(1) {
     display: flex;
-    justify-content: center;
+    width: 30%;
+    justify-content: flex-end;
     align-items: center;
     gap: 20px;
     font-size: 20px;
     color: white;
 }
 
-
 .bar-volume{
-    width: 150px;
+    width: 30%;
     height: 5px;
     background: grey;
     cursor: pointer;
