@@ -49,9 +49,7 @@ header{
     background-color: #000000;
     padding: 15px;
 }
-.logo{
-    
-}
+
 header .row:nth-child(2){
     margin-top: 20px;
 }
@@ -107,7 +105,7 @@ main{
     justify-content: flex-end;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 20px;
+   
 }
 .btn-black{
     border-radius: 20px;
@@ -150,12 +148,17 @@ main{
 #recenti .row:nth-child(2){
     display: flex;
     justify-content: flex-start;
-    gap: 30px;
+    flex-wrap: wrap;
     margin-top: 20px;
+}
+
+#recenti .box-container{
+    width: calc(100% / 6);
+    text-align: center;
+    padding: 5px;
 }
 #recenti .box-text{
     margin-top: 5px;
-    text-align: center;
 }
 .title{
     color: white;
@@ -176,15 +179,19 @@ main{
 #for-user .row:nth-child(2){
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin-top: 20px;
-    gap: 30px;
+}
+#for-user .box-container{
+    width: calc(100% / 6);
+    text-align: center;
+    padding: 5px;
 }
 #for-user .box-sub-title{
     margin-top: 5px;
 }
 #for-user .box-text{
     margin-top: 5px;
-    text-align: center;
 }
 /* FINE FOR-USER */
 
@@ -199,15 +206,20 @@ main{
 #popular  .row:nth-child(2){
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin-top: 20px;
-    gap: 30px;
+}
+#popular .box-container{
+    width: calc(100% / 6);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 #popular  .box-sub-title{
     margin-top: 5px;
 }
 #popular .box-text{
     margin-top: 5px;
-    text-align: center;
 }
 .circle{
     border-radius: 50%;
@@ -238,7 +250,7 @@ footer .col:nth-child(1), .box-container-footer{
     width: 80px;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 footer .col:nth-child(2) {
@@ -337,9 +349,15 @@ i:hover{
    .ul-nav, .li-nav{
     flex-wrap: wrap;
     }
-    #recenti .row:nth-child(2){
-        flex-wrap: wrap;
-     }
+     #recenti .box-container{
+        width: calc(100% / 4);
+    }
+    #for-user .box-container{
+        width: calc(100% / 4);
+    }
+    #popular .box-container{
+        width: calc(100% / 4);
+    }
 }
 @media screen and (max-width: 700px) {
     main, heaeder {
@@ -348,21 +366,66 @@ i:hover{
        .ul-nav, .li-nav{
         flex-wrap: wrap;
         }
-        #recenti .row:nth-child(2){
-            flex-wrap: wrap;
+        #recenti .box-container{
+            width: calc(100% / 2);
+        }
+        #for-user .box-container{
+            width: calc(100% / 2);
+        }
+        #popular .box-container{
+            width: calc(100% / 2);
+        }
+        .c-icon{
+            display: block;
+        }
+        footer .row {
+            gap: 20px;
          }
-         .album{
-             width: 50%;
-         }
-
+         footer .box-top, .box-bottom {
+            gap: 30px;
+        }
+        footer .col:nth-last-child(1) {
+            gap: 10px;
+        }
 }
 
 @media screen and (max-width: 600px) {
-    main, heaeder  {
+        main  {
         width: 100%;
+       }
+       header{
+        width: 52px;
        }
        .ul-nav, .li-nav{
         flex-wrap: wrap;
+        }
+        #recenti .box-container{
+            width: calc(100% / 2);
+        }
+        #for-user .box-container{
+            width: calc(100% / 2);
+        }
+        #popular .box-container{
+            width: calc(100% / 2);
+        }
+        footer .row {
+           gap: 5px;
+        }
+        footer .col:nth-child(1), .box-container-footer{
+            gap: 5px;
+         }
+        .box-image-play{
+            width: 50px;
+            height: 50px;
+        }
+        .c-icon{
+            display: block;
+        }
+        footer .box-top, .box-bottom {
+            gap: 30px;
+        }
+        footer .col:nth-last-child(1) {
+            gap: 10px;
         }
 }
 
