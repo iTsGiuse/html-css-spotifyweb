@@ -15,46 +15,69 @@
 <body>
     <div class="separatore">
         <header>
-                    <div class="row">
-                        <img class="logo" src="./img/logo.svg" alt="">
-                    </div>
-                    <div class="row">
-                        <ul class="ul-header">
-                            <li class="li-header"><a class="link link-header" href="http://"><i class="iconcine fa-solid fa-house"></i> Home</li></a>
-                            <li class="li-header"><a class="link link-header" href="http://"><i class="fa-solid fa-magnifying-glass"></i> Cerca</li></a>
-                            <li class="li-header"><a class="link link-header" href="http://"><i class="fa-solid fa-grip-lines-vertical"></i> La tua libreria</li></a>
+            <div class="row">
+                <img class="logo" src="./img/logo.svg" alt="">
+            </div>
+            <nav class="row">
+                        <ul class="ul-menu">
+                            <li class="li-menu bordo-verticale"> 
+                                <div class="box-container">
+                                    <div class="box-image-header">
+                                        <img src="./img/home.svg" alt="home"></i>
+                                    </div>
+                                    <a class="link link-header" href="#">Home</a>
+                                </div>
+                            </li>
+                            <li class="li-menu">
+                                <div class="box-container">
+                                    <div class="box-image-header">
+                                        <img src="./img/search.svg" alt="search"></i>
+                                    </div>
+                                    <a class="link link-header" href="#">Search</a>
+                                </div>
+                            </li>
+                            <li class="li-menu">
+                                <div class="box-container">
+                                    <div class="box-image-header">
+                                        <img src="./img/libreria.svg" alt="libreria"></i>
+                                    </div>
+                                    <a class="link link-header" href="#">La tua libreria</a>
+                                </div>
+                            </li>
                         </ul>
+            </nav>
+            <div class="row">
+                <div class="box-title-header">
+                    <h3>PLAYLIST</h3>
+                </div>
+                <div class="box-ul">
+                    <ul class="ul-header">
+                        <li class="li-header "><i class="iconcina-big fa-solid fa-square-plus"></i> Crea Playlist </li>
+                        <li class="li-header"> Nome Playlist</li>
+                        <li class="li-header"> Nome Playlist</li>
+                        <li class="li-header"> Nome Playlist</li>
+                        <li class="li-header"> Nome Playlist</li>
+                        <li class="li-header"> Nome Playlist</li>
+                        <li class="li-header"> Nome Playlist</li>
+                        <li class="li-header"> Nome Playlist</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="box-container">
+                        <div class="box-image-header download">
+                            <img src="./img/download.svg" alt="download"></i>
+                        </div>
+                        <a class="link link-header" href="#">Download</a>
                     </div>
-                    <div class="row">
-                        <div class="box-title-header">
-                            <h3>PLAYLIST</h3>
+                    <hr class="hr-header">
+                    <div class="box-container">
+                        <div class="box-image-header">
+                            <img src="./img/profile.svg" alt="profile"></i>
                         </div>
-                        <div class="box-ul">
-                            <ul class="ul-header">
-                                <li class="li-header "><i class="iconcina-big fa-solid fa-square-plus"></i> Crea Playlist </li>
-                                <li class="li-header"> Nome Playlist</li>
-                                <li class="li-header"> Nome Playlist</li>
-                                <li class="li-header"> Nome Playlist</li>
-                                <li class="li-header"> Nome Playlist</li>
-                                <li class="li-header"> Nome Playlist</li>
-                                <li class="li-header"> Nome Playlist</li>
-                                <li class="li-header"> Nome Playlist</li>
-                            </ul>
-                        </div>
+                        <a class="link link-header profile" href="#">John Doe</a>
                     </div>
-                    <div class="row">
-                        <div>
-                        <div class="box">
-                         <a class="install link link-header" href="http://"><i class="fa-solid fa-circle-arrow-down"></i>  Installa app</a>
-                        </div>
-                        <hr class="hr-header">
-                        <div class="box-user">
-                            <a class="user link link-header" href="http://"><i class="fa-solid fa-circle-user"></i> Jonh Doe</a>
-                        </div>
-                        </div>
-                    </div>
-              
-          
+                </div> 
         </header> 
         <main>
             <section id="hero">
@@ -70,7 +93,7 @@
                 <div class="container">
                     <div class="row">
                         <ul class="ul-nav">
-                            <div><li class="li-nav bar">IN EVIDENZA</li></div>
+                            <li class="li-nav bordo-orizzonatale">IN EVIDENZA</li>
                             <li class="li-nav">PODCAST</li>
                             <li class="li-nav"> CLASSIFICHE</li>
                             <li class="li-nav">GENERI E MOOD</li>
