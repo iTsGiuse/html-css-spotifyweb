@@ -42,6 +42,8 @@ ul, li{
 /* INIZIO HEADER */
 header{
     max-width: 250px;
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     overflow: hidden;
     background-color: #000000;
@@ -65,6 +67,7 @@ header .row:nth-child(2){
 }
 header .row:nth-child(3){
     margin-top: 20px;
+    overflow: auto;
 }
 .iconcina-big {
     font-size: 30px;
@@ -75,7 +78,7 @@ header .box-title-header{
     margin-bottom: 10px;
 }
 header .row:nth-last-child(1){
-    margin-top: 430px;
+    margin-top: 160px;
 }
 .hr-header {
     margin-top: 12px;
@@ -128,8 +131,14 @@ main{
     color: grey;
     font-weight: 500;
     gap: 20px;
-
 }
+
+.evidenziatore{
+    width: 10px;
+    background: green;
+    height: 2px;
+}
+
 /* FINE NAV */
 
 /* INIZIO RECENTI */
@@ -237,7 +246,6 @@ footer .col:nth-child(1), .box-container-footer{
 }
 footer .col:nth-child(2) {
     display: block;
-    
 }
 
 footer .box-top, .box-bottom {
@@ -250,9 +258,10 @@ footer .box-top, .box-bottom {
     margin-top: 10px;
 }
 
-.hr-song{
-    border: 2px solid grey;
+.bar-song{
     width: 500px;
+    height: 5px;
+    background: grey;
     cursor: pointer;
 }
 
@@ -265,9 +274,17 @@ footer .col:nth-last-child(1) {
     color: white;
 }
 
-.hr-volume{
-    border: 2px solid grey;
+
+.bar-volume{
     width: 150px;
+    height: 5px;
+    background: grey;
+    cursor: pointer;
+}
+.bar-riempimento{
+    width: 15%;
+    height: 100%;
+    background: white;
     cursor: pointer;
 }
 /* FINE FOOTER */
@@ -292,6 +309,23 @@ footer .col:nth-last-child(1) {
 }
 .album:hover{
     width: 110%;
+
+} 
+i:hover{
+    font-size: 22px;
+    color: white;
+}
+.image-nascosta{
+    display: none;
+}
+.image:hover{
+    display: block;
+    position: relative;
+    font-size: 300%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /* FINE HOOVER */
 
@@ -299,22 +333,21 @@ footer .col:nth-last-child(1) {
 
 /* INIZIO MEDIAQUEARY */
 @media screen and (max-width: 1100px) {
-    .container{
-        width: 100%;
-    }
+   main, heaeder{
+    width: 100%;
+   }
 }
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+    main, heaeder {
+        width: 100%;
+       }
+
+}
 
 @media screen and (max-width: 600px) {
-    header {
-        width: 70px;
-    }
-
-    .playlist-title, .playlist {
-        display: none;
-    }
+    main, heaeder  {
+        width: 100%;
+       }
 }
+
 /* FINE MEDIAQUEARY */
-
-
-
